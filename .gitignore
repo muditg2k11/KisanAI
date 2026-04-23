@@ -3,3 +3,16 @@ node_modules/
 __pycache__/
 .env
 .DS_Store
+*.log
+
+# frontend build stuff
+dist/
+build/
+bower_components/
+
+# uploads
+uploads/venv/
+node_modules/
+__pycache__/
+.env
+.DS_Store
