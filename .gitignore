@@ -1,0 +1,22 @@
+# Environments
+venv/
+.env
+__pycache__/
+
+# Node
+node_modules/
+build/
+dist/
+
+# Logs
+*.log
+push_error.txt
+push_error_utf8.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+*.rar
+uploads/

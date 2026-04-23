@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Agriculture - Organic Farming Wordpress Theme">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="profile" href="//gmpg.org/xfn/11">
+  <title>Agrinova &#8211; Agriculture &amp; Organic Farming WP Theme</title>
+  <meta name='robots' content='max-image-preview:large' />
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px
+    }
+  </style>
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="alternate" type="application/rss+xml" title="Donalfarm &raquo; Feed" href="/" />
+  <link rel="alternate" type="application/rss+xml" title="Donalfarm &raquo; Comments Feed" href="/" />
+
+  <link rel='stylesheet' id='pxl-main-css-css' href='/assets/wp-content/plugins/pxltheme-core/assets/css/main.css'
+    type='text/css' media='all' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Hero Headline Polish */
+    .elementor-widget-pxl_slider .heading-title {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(30px, 5.5vw, 45px) !important;
+      /* Slightly smaller for 2-line guarantee */
+      line-height: 1.1 !important;
+      max-width: none !important;
+      width: 100% !important;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    /* Move hero description and button up */
+    .elementor-widget-pxl_text_editor {
+      margin-top: -10px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .elementor-widget-pxl_button {
+      margin-top: -15px !important;
+      /* Pull button up further */
+    }
+
+    /* Remove accidental '>' icons from headlines */
+    .elementor-widget-pxl_slider .heading-title::before,
+    .elementor-widget-pxl_slider .heading-title::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    /* Ensure arrows are on sides and visible */
+    .pxl-slider-arrow-wrap {
+      position: absolute !important;
+      top: 50% !important;
+      width: 100% !important;
+      z-index: 99;
+      display: flex !important;
+      justify-content: space-between !important;
+      padding: 0 50px !important;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .pxl-slider-arrow {
+      pointer-events: auto;
+      background: rgba(0, 0, 0, 0.2) !important;
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transition: all 0.3s;
+    }
+
+    .pxl-slider-arrow:hover {
+      background: #92be22 !important;
+    }
+
+    /* Global Font Overrides */
+    body,
+    p,
+    span,
+    li,
+    a {
+      font-family: 'Verdana', sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .pxl-menu-title {
+      font-family: 'Poppins', sans-serif !important;
+    }
+  </style>
+  <style id='wp-emoji-styles-inline-css' type='text/css'>
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <style id='classic-theme-styles-inline-css' type='text/css'>
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none
+    }
+  </style>
+  <style id='global-styles-inline-css' type='text/css'>
+    :root {
+      --wp--preset--aspect-ratio--square: 1;
+      --wp--preset--aspect-ratio--4-3: 4/3;
+      --wp--preset--aspect-ratio--3-4: 3/4;
+      --wp--preset--aspect-ratio--3-2: 3/2;
+      --wp--preset--aspect-ratio--2-3: 2/3;
+      --wp--preset--aspect-ratio--16-9: 16/9;
+      --wp--preset--aspect-ratio--9-16: 9/16;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+      --wp--preset--font-family--cardo: Cardo;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :where(.is-layout-flex) {
+      gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+      gap: 0.5em;
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel='stylesheet' id='contact-form-7-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='pu-front-css-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/pxl-user/assets/css/pu-front.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='dashicons-css' href='%PUBLIC_URL%/assets/wp-includes/css/dashicons.min.css' type='text/css'
+    media='all' />
+  <style id='woocommerce-inline-inline-css' type='text/css'>
+    .woocommerce form .form-row .required {
+      visibility: visible;
+    }
+  </style>
+  <link rel='stylesheet' id='elementor-frontend-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/custom-frontend.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='swiper-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='e-swiper-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='elementor-post-7-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-7.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-5-all-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='font-awesome-4-shim-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='e-animation-zoomIn-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='e-animation-wobble-vertical-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-wobble-vertical.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-fadeInUp-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-zoomInLeft-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/zoomInLeft.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-pulse-shrink-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-pulse-shrink.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='widget-spacer-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/css/widget-spacer.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='e-animation-fadeInLeft-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-zoomInRight-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/zoomInRight.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-grow-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='pxl-timepicker-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/pxltheme-core//assets/css/jquery.timepicker.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='elementor-post-4812-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-4812.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-8-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-8.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-677-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-677.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-463-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-463.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-5754-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-5754.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-9446-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-9446.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-9461-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-9461.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-9473-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-9473.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-10968-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-10968.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='hint-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-compare/assets/libs/hint/hint.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='perfect-scrollbar-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='perfect-scrollbar-wpc-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/custom-theme.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='woosc-frontend-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-compare/assets/css/frontend.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='slick-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='magnific-popup-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/magnific-popup.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='woosq-feather-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-quick-view/assets/libs/feather/feather.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='woosq-frontend-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-quick-view/assets/css/frontend.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='woosw-icons-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-wishlist/assets/css/icons.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='woosw-frontend-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woo-smart-wishlist/assets/css/frontend.css' type='text/css'
+    media='all' />
+  <style id='woosw-frontend-inline-css' type='text/css'>
+    .woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-notice {
+      background-color: #5fbd74;
+    }
+
+    .woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-popup-content-bot-inner a:hover {
+      color: #5fbd74;
+      border-color: #5fbd74;
+    }
+  </style>
+  <link rel='stylesheet' id='pixelart-icon-css'
+    href='%PUBLIC_URL%/assets/wp-content/themesassets/fonts/pixelart/style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='donalfarm-grid-css' href='%PUBLIC_URL%/assets/wp-content/themesassets/css/grid.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='donalfarm-style-css' href='%PUBLIC_URL%/assets/wp-content/themesassets/css/style.css'
+    type='text/css' media='all' />
+  <style id='donalfarm-style-inline-css' type='text/css'>
+    :root {
+      --default-color: #52320a;
+      --primary-color: #0d401c;
+      --second-color: #f8c32c;
+      --third-color: #278d45;
+      --body-color: #6e7673;
+      --heading-color: #072010;
+      --white-color: #ffffff;
+      --black-color: #000000;
+      --dark-color: #111111;
+      --default-color-rgb: 82, 50, 10;
+      --primary-color-rgb: 13, 64, 28;
+      --second-color-rgb: 248, 195, 44;
+      --third-color-rgb: 39, 141, 69;
+      --body-color-rgb: 110, 118, 115;
+      --heading-color-rgb: 7, 32, 16;
+      --white-color-rgb: 255, 255, 255;
+      --black-color-rgb: 0, 0, 0;
+      --dark-color-rgb: 17, 17, 17;
+      --link-color: var(--heading-color);
+      --link-color-hover: var(--third-color);
+      --link-color-active: var(--third-color);
+      --body-font-family: 'Verdana', sans-serif;
+      --body-font-size: 16px;
+      --body-font-weight: normal;
+      --body-line-height: 1.625;
+      --body-letter-spacing: 0;
+      --heading-font-family: 'Poppins', sans-serif;
+      --heading-font-weight: 700;
+      --heading-line-height: 1.2;
+      --heading-letter-spacing: 0px;
+      --heading-color-hover: var(--primary-color);
+      --heading-font-size-h1: 60px;
+      --heading-font-size-h2: 45px;
+      --heading-font-size-h3: 30px;
+      --heading-font-size-h4: 20px;
+      --heading-font-size-h5: 18px;
+      --heading-font-size-h6: 16px;
+      --logo-width: 209px;
+      --logo-mobile_width: 174px;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .heading-title,
+    .pxl-split-text,
+    .split-lines-rotation-x {
+      font-family: 'Poppins', sans-serif !important;
+    }
+  </style>
+  <link rel='stylesheet' id='donalfarm-base-css' href='%PUBLIC_URL%/assets/wp-content/themesstyle.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='donalfarm-google-fonts-css'
+    href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animations-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/animations.min.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='odometer-css'
+    href='%PUBLIC_URL%/assets/wp-content/themeselements/assets/css/odometer-theme-default.css' type='text/css'
+    media='all' />
+  <script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+  <script type="text/template" id="tmpl-unavailable-variation-template">
+	<p role="alert">Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/jquery-migrate.min.js"
+    id="jquery-migrate-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/pxltheme-core/assets/js/libs/waypoints.min.js"
+    id="waypoints-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js"
+    data-wp-strategy="defer"></script>
+  <script type="text/javascript" id="wc-add-to-cart-js-extra">
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = { "ajax_url": "\/donalfarm\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "\/assets\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js"
+    id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js"
+    id="js-cookie-js" data-wp-strategy="defer"></script>
+  <script type="text/javascript" id="woocommerce-js-extra">
+    /* <![CDATA[ */
+    var woocommerce_params = { "ajax_url": "\/donalfarm\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js"
+    id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js"
+    id="font-awesome-4-shim-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/pxltheme-core/assets/js/libs/swiper/v8/swiper.min.js"
+    id="swiper-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/underscore.min.js" id="underscore-js"></script>
+  <script type="text/javascript" id="wp-util-js-extra">
+    /* <![CDATA[ */
+    var _wpUtilSettings = { "ajax": { "url": "\/donalfarm\/wp-admin\/admin-ajax.php" } };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/wpc-variation-swatches/assets/libs/tippy/popper.min.js"
+    id="popper-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/wpc-variation-swatches/assets/libs/tippy/tippy-bundle.umd.min.js"
+    id="tippy-js"></script>
+  <link rel="https://api.w.org/" href="/" />
+  <link rel="alternate" title="JSON" type="application/json" href="/wp/v2/pages/4812" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/assets/xmlrpc.php?rsd" />
+  <meta name="generator" content="WordPress 6.7.2" />
+  <meta name="generator" content="WooCommerce 9.4.1" />
+  <link rel="canonical" href="/assets/" />
+  <link rel='shortlink' href='/assets/' />
+  <meta name="generator" content="Redux 4.5.0" /> <noscript>
+    <style>
+      .woocommerce-product-gallery {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+  <meta name="generator"
+    content="Elementor 3.25.5; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
+  <style>
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+      background-image: none !important;
+    }
+
+    @media screen and (max-height: 1024px) {
+
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+
+    @media screen and (max-height: 640px) {
+
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+  </style>
+  <style class='wp-fonts-local' type='text/css'>
+    @font-face {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 300 900;
+      font-display: fallback;
+      src: url('/assets/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');
+      font-stretch: normal;
+    }
+
+    @font-face {
+      font-family: Cardo;
+      font-style: normal;
+      font-weight: 400;
+      font-display: fallback;
+      src: url('/assets/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');
+    }
+  </style>
+  <style id="pxl_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">
+    .pxl-pagetitle .pxl-page-title-bg {
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center top;
+      background-image: url('%PUBLIC_URL%/assets/wp-content/uploads/2024/06/pt-bg.jpg');
+      background-size: cover;
+    }
+
+    .pxl-page-title-bg {
+      top: -80px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    .post-type-archive-portfolio .pxl-pagetitle .pxl-page-title-bg,
+    .single-portfolio .pxl-pagetitle .pxl-page-title-bg {
+      background-image: url('%PUBLIC_URL%/assets/wp-content/uploads/2024/06/pt-bg-port.webp');
+    }
+
+    .post-type-archive-events .pxl-pagetitle .pxl-page-title-bg,
+    .single-events .pxl-pagetitle .pxl-page-title-bg {
+      background-image: url('%PUBLIC_URL%/assets/wp-content/uploads/2024/06/pt-bg-events.webp');
+    }
+
+    .post-type-archive-services .pxl-pagetitle .pxl-page-title-bg,
+    .single-services .pxl-pagetitle .pxl-page-title-bg {
+      background-image: url('%PUBLIC_URL%/assets/wp-content/uploads/2024/07/pt-bg-services.webp');
+    }
+
+    .woocommerce-page .pxl-pagetitle .pxl-page-title-bg {
+      background-image: url('%PUBLIC_URL%/assets/wp-content/uploads/2024/09/shop-pt-bg.webp');
+    }
+  </style>
+</head>
+
+<body
+  class="home page-template-default page page-id-4812 theme-donalfarm woocommerce-no-js theme-core overflow-x-hidden elementor-default elementor-kit-7 elementor-page elementor-page-4812 currency-usd">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>(function () {
+      function maybePrefixUrlField() {
+        const value = this.value.trim()
+        if (value !== '' && value.indexOf('http') !== 0) {
+          this.value = 'http://' + value
+        }
+      }
+
+      const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+      for (let j = 0; j < urlFields.length; j++) {
+        urlFields[j].addEventListener('blur', maybePrefixUrlField)
+      }
+    })();</script>
+  <div class="woosc-popup woosc-search">
+    <div class="woosc-popup-inner">
+      <div class="woosc-popup-content">
+        <div class="woosc-popup-content-inner">
+          <div class="woosc-popup-close"></div>
+          <div class="woosc-search-input">
+            <label for="woosc_search_input"></label><input type="search" id="woosc_search_input"
+              placeholder="Type any keyword to search..." />
+          </div>
+          <div class="woosc-search-result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="woosc-popup woosc-settings">
+    <div class="woosc-popup-inner">
+      <div class="woosc-popup-content">
+        <div class="woosc-popup-content-inner">
+          <div class="woosc-popup-close"></div>
+          <ul class="woosc-settings-tools">
+            <li>
+              <label><input type="checkbox" class="woosc-settings-tool" value="hide_similarities"
+                  id="woosc_hide_similarities" /> Hide similarities </label>
+            </li>
+            <li>
+              <label><input type="checkbox" class="woosc-settings-tool" value="highlight_differences"
+                  id="woosc_highlight_differences" /> Highlight differences </label>
+            </li>
+          </ul>
+          Select the fields to be shown. Others will be hidden. Drag and drop to rearrange the order. <ul
+            class="woosc-settings-fields">
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="4mgc"
+                checked /><span class="move">Image</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="ozat"
+                checked /><span class="move">SKU</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="wj5t"
+                checked /><span class="move">Rating</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="la2x"
+                checked /><span class="move">Price</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="p21t"
+                checked /><span class="move">Stock</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="c1ks"
+                checked /><span class="move">Availability</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="0lbr"
+                checked /><span class="move">Add to cart</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="68w0"
+                checked /><span class="move">Description</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="2ohy"
+                checked /><span class="move">Content</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="p622"
+                checked /><span class="move">Weight</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="23kw"
+                checked /><span class="move">Dimensions</span></li>
+            <li class="woosc-settings-field-li"><input type="checkbox" class="woosc-settings-field" value="i05d"
+                checked /><span class="move">Additional information</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="woosc-popup woosc-share">
+    <div class="woosc-popup-inner">
+      <div class="woosc-popup-content">
+        <div class="woosc-popup-content-inner">
+          <div class="woosc-popup-close"></div>
+          <div class="woosc-share-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="woosc-area"
+    class="woosc-area woosc-bar-bottom woosc-bar-right woosc-bar-click-outside-yes woosc-hide-checkout"
+    data-bg-color="#292a30" data-btn-color="#00a0d2">
+    <div class="woosc-inner">
+      <div class="woosc-table">
+        <div class="woosc-table-inner">
+          <a href="#close" id="woosc-table-close" class="woosc-table-close hint--left" aria-label="Close"><span
+              class="woosc-table-close-icon"></span></a>
+          <div class="woosc-table-items"></div>
+        </div>
+      </div>
+
+      <div class="woosc-bar">
+        <div class="woosc-bar-notice">
+          Click outside to hide the comparison bar </div>
+        <a href="#print" class="woosc-bar-print hint--top" aria-label="Print"></a>
+        <a href="#share" class="woosc-bar-share hint--top" aria-label="Share"></a>
+        <a href="#search" class="woosc-bar-search hint--top" aria-label="Add product"></a>
+        <div class="woosc-bar-items"></div>
+        <div class="woosc-bar-btn woosc-bar-btn-text">
+          <div class="woosc-bar-btn-icon-wrapper">
+            <div class="woosc-bar-btn-icon-inner"><span></span><span></span><span></span>
+            </div>
+          </div>
+          Compare
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="woosw_wishlist" class="woosw-popup woosw-popup-center"></div>
+  <script type='text/javascript'>
+    const lazyloadRunObserver = () => {
+      const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+      const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let lazyloadBackground = entry.target;
+            if (lazyloadBackground) {
+              lazyloadBackground.classList.add('e-lazyloaded');
+            }
+            lazyloadBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px 0px 200px 0px' });
+      lazyloadBackgrounds.forEach((lazyloadBackground) => {
+        lazyloadBackgroundObserver.observe(lazyloadBackground);
+      });
+    };
+    const events = [
+      'DOMContentLoaded',
+      'elementor/lazyload/observe',
+    ];
+    events.forEach((event) => {
+      document.addEventListener(event, lazyloadRunObserver);
+    });
+  </script>
+  <script type='text/javascript'>
+    (function () {
+      var c = document.body.className;
+      c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+      document.body.className = c;
+    })();
+  </script>
+  <link rel='stylesheet' id='wc-blocks-style-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='woocommerce-currency-switcher-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/woocommerce-currency-switcher/css/front.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='elementor-post-5468-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-5468.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='e-animation-fadeInRight-css'
+    href='%PUBLIC_URL%/assets/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-5496-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-5496.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-5498-css'
+    href='%PUBLIC_URL%/assets/wp-content/uploads/elementor/css/post-5498.css' type='text/css' media='all' />
+  <script type="text/javascript" src="/assets/wp-content/plugins/pxltheme-core/assets/js/main.js"
+    id="pxl-core-main-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+  <script type="text/javascript" id="wp-i18n-js-after">
+    /* <![CDATA[ */
+    wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/contact-form-7/includes/swv/js/index.js"
+    id="swv-js"></script>
+  <script type="text/javascript" id="contact-form-7-js-before">
+    /* <![CDATA[ */
+    var wpcf7 = {
+      "api": {
+        "root": "\/assets\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+      }
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/contact-form-7/includes/js/index.js"
+    id="contact-form-7-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/progressbar.min.js"
+    id="jquery-ui-progressbar-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/datepicker.min.js"
+    id="jquery-ui-datepicker-js"></script>
+  <script type="text/javascript" id="jquery-ui-datepicker-js-after">
+    /* <![CDATA[ */
+    jQuery(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "Close", "currentText": "Today", "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Previous", "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "dateFormat": "d MM yy", "firstDay": 1, "isRTL": false }); });
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/pxltheme-core//assets/js/libs/jquery.timepicker.min.js"
+    id="pxl-timepicker-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woo-smart-compare/assets/libs/print/jQuery.print.js"
+    id="print-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woo-smart-compare/assets/libs/table-head-fixer/table-head-fixer.js"
+    id="table-head-fixer-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"
+    id="perfect-scrollbar-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/mouse.min.js" id="jquery-ui-mouse-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/sortable.min.js"
+    id="jquery-ui-sortable-js"></script>
+  <script type="text/javascript" id="woosc-frontend-js-extra">
+    /* <![CDATA[ */
+    var woosc_vars = { "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "nonce": "27f7d0d9f2", "hash": "6", "user_id": "0cdb64fab32a05bd393b20c8c351de9f", "page_url": "#", "open_button": "", "hide_empty_row": "yes", "reload_count": "no", "variations": "yes", "open_button_action": "open_popup", "menu_action": "open_popup", "button_action": "show_table", "sidebar_position": "right", "message_position": "right-top", "message_added": "{name} has been added to Compare list.", "message_removed": "{name} has been removed from the Compare list.", "message_exists": "{name} is already in the Compare list.", "open_bar": "no", "bar_bubble": "no", "adding": "prepend", "click_again": "no", "hide_empty": "no", "click_outside": "yes", "freeze_column": "yes", "freeze_row": "yes", "scrollbar": "yes", "limit": "100", "remove_all": "Do you want to remove all products from the compare?", "limit_notice": "You can add a maximum of {limit} products to the comparison table.", "copied_text": "Share link %s was copied to clipboard!", "button_text": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 512 512\"><path d=\"M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96l160 0 0 32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32l0 32L160 64C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96l-160 0 0-32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-32 160 0c88.4 0 160-71.6 160-160z\"\/><\/svg><span class=\"tt-txt\">Compare<\/span>", "button_text_added": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 512 512\"><path d=\"M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96l160 0 0 32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32l0 32L160 64C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96l-160 0 0-32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-32 160 0c88.4 0 160-71.6 160-160z\"\/><\/svg><span class=\"tt-txt\">Compare<\/span>", "button_normal_icon": "woosc-icon-1", "button_added_icon": "woosc-icon-74" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woo-smart-compare/assets/js/frontend.js"
+    id="woosc-frontend-js"></script>
+  <script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+    /* <![CDATA[ */
+    var wc_add_to_cart_variation_params = { "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.", "i18n_make_a_selection_text": "Please select some product options before adding this product to your cart.", "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination." };
+    /* ]]> */
+  </script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js"
+    id="wc-add-to-cart-variation-js" data-wp-strategy="defer"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.js"
+    id="slick-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/jquery.magnific-popup.min.js"
+    id="magnific-popup-js"></script>
+  <script type="text/javascript" id="woosq-frontend-js-extra">
+    /* <![CDATA[ */
+    var woosq_vars = { "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "nonce": "548e471d93", "view": "popup", "effect": "mfp-3d-unfold", "scrollbar": "yes", "auto_close": "yes", "hashchange": "no", "cart_redirect": "no", "cart_url": "\/assets\/cart\/", "close": "Close (Esc)", "next_prev": "yes", "next": "Next (Right arrow key)", "prev": "Previous (Left arrow key)", "thumbnails_effect": "no", "related_slick_params": "{\"slidesToShow\":2,\"slidesToScroll\":2,\"dots\":true,\"arrows\":false,\"adaptiveHeight\":true,\"rtl\":false}", "thumbnails_slick_params": "{\"slidesToShow\":1,\"slidesToScroll\":1,\"dots\":true,\"arrows\":true,\"adaptiveHeight\":false,\"rtl\":false}", "thumbnails_zoom_params": "{\"duration\":120,\"magnify\":1}", "quick_view": "0" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woo-smart-quick-view/assets/js/frontend.js"
+    id="woosq-frontend-js"></script>
+  <script type="text/javascript" id="woosw-frontend-js-extra">
+    /* <![CDATA[ */
+    var woosw_vars = { "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "nonce": "c77b77c79f", "page_myaccount": "yes", "menu_action": "open_page", "reload_count": "no", "perfect_scrollbar": "yes", "wishlist_url": "\/assets\/wishlist\/", "button_action": "list", "message_position": "right-top", "button_action_added": "popup", "empty_confirm": "This action cannot be undone. Are you sure?", "delete_confirm": "This action cannot be undone. Are you sure?", "copied_text": "Copied the wishlist link:", "menu_text": "Wishlist", "button_text": "<span class=\"pxl-icon pxli-heart1\"><\/span><span class=\"text tt-txt\">Add to wishlist<\/span>", "button_text_added": "<span class=\"pxl-icon pxli-heart1\"><\/span><span class=\"text tt-txt\">Browse wishlist<\/span>", "button_normal_icon": "woosw-icon-5", "button_added_icon": "woosw-icon-8", "button_loading_icon": "woosw-icon-4" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woo-smart-wishlist/assets/js/frontend.js"
+    id="woosw-frontend-js"></script>
+  <script type="text/javascript" id="wpcvs-frontend-js-extra">
+    /* <![CDATA[ */
+    var wpcvs_vars = { "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "nonce": "439231e2ee", "tooltip_library": "tippy", "second_click": "no", "is_product": "no", "archive_change_url": "no", "single_change_url": "no", "single_replacement": "enable", "single_product": ".product.product-type-variable", "single_name": ".summary > .product_title", "single_price": ".summary > .price", "single_desc": ".summary > .woocommerce-product-details__short-description", "archive_enable": "no", "archive_product": ".product", "archive_link": ".woocommerce-loop-product__link, .woocommerce-loop-product__title a, a.add_to_cart_button", "archive_image": ".attachment-woocommerce_thumbnail", "archive_name": ".woocommerce-loop-product__title", "archive_price": ".price", "archive_atc": ".add_to_cart_button", "archive_atc_text": ".add_to_cart_button", "add_to_cart": "Add to cart", "select_options": "Select options", "view_cart": "<a href=\"\/assets\/cart\/\" class=\"added_to_cart wc-forward\" title=\"View cart\">View cart<\/a>" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/wpc-variation-swatches/assets/js/frontend.js"
+    id="wpcvs-frontend-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js"
+    id="sourcebuster-js-js"></script>
+  <script type="text/javascript" id="wc-order-attribution-js-extra">
+    /* <![CDATA[ */
+    var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "base64": false, "ajaxurl": "\/assets\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+    /* ]]> */
+  </script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js"
+    id="wc-order-attribution-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/gsap.min.js"
+    id="gsap-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themesassets/js/nice-select.min.js"
+    id="nice-select-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themesassets/js/cursor.js" id="donalfarm-cursor-js"></script>
+  <script type="text/javascript" id="donalfarm-main-js-extra">
+    /* <![CDATA[ */
+    var main_data = { "ajaxurl": "\/assets\/wp-admin\/admin-ajax.php", "pxl_ajax_url": "\/donalfarm\/?donalfarm-ajax=%%endpoint%%", "lg_share": "on", "lg_zoom": "on", "lg_full_screen": "on", "lg_download": "on", "lg_auto_play": "off", "lg_thumbnail": "on", "nonce": "c485a71da2", "i18l": { "no_matched_found": "No matched found", "all": "All %s" } };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/themesassets/js/theme.js" id="donalfarm-main-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/scroll-trigger.js"
+    id="scroll-trigger-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/split-text.js"
+    id="pxl-split-text-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/typed.min.js"
+    id="pxl-typed-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/parallax-background.js"
+    id="pxl-parallax-background-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/parallax-scroll.js"
+    id="pxl-parallax-scroll-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/libs/odometer.min.js"
+    id="odometter-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-elementor-edit.js"
+    id="donalfarm-elementor-edit-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-elementor.js"
+    id="donalfarm-elementor-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-elements.js"
+    id="donalfarm-elements-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-swiper-carousel.js"
+    id="donalfarm-swiper-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-swiper-slider.js"
+    id="donalfarm-swiper-slider-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-counter.js"
+    id="donalfarm-counter-js"></script>
+  <script type="text/javascript" src="/assets/wp-includes/js/jquery/ui/slider.min.js" id="jquery-ui-slider-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js"
+    id="wc-jquery-ui-touchpunch-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce-currency-switcher/js/price-slider_33.js"
+    id="wc-price-slider_33-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce-currency-switcher/js/real-active-filters.js"
+    id="woocs-real-active-filters-js"></script>
+  <script type="text/javascript"
+    src="/assets/wp-content/plugins/woocommerce-currency-switcher/js/real-price-filter-frontend.js"
+    id="woocs-price-filter-frontend-js"></script>
+  <script type="text/javascript" id="woocommerce-currency-switcher-js-before">
+    /* <![CDATA[ */
+
+    var woocs_is_mobile = 0;
+    var woocs_special_ajax_mode = 0;
+    var woocs_drop_down_view = "style-1";
+    var woocs_current_currency = { "name": "USD", "rate": 1, "symbol": "&#36;", "position": "right", "is_etalon": 1, "hide_cents": 0, "hide_on_front": 0, "rate_plus": "", "decimals": 2, "separators": "0", "description": "USA dollar", "flag": "\/assets\/wp-content\/plugins\/woocommerce-currency-switcher\/img\/no_flag.png" };
+    var woocs_default_currency = { "name": "USD", "rate": 1, "symbol": "&#36;", "position": "right", "is_etalon": 1, "hide_cents": 0, "hide_on_front": 0, "rate_plus": "", "decimals": 2, "separators": "0", "description": "USA dollar", "flag": "\/assets\/wp-content\/plugins\/woocommerce-currency-switcher\/img\/no_flag.png" };
+    var woocs_redraw_cart = 1;
+    var woocs_array_of_get = '{}';
+
+    woocs_array_no_cents = '["JPY","TWD"]';
+
+    var woocs_ajaxurl = "/assets/wp-admin/admin-ajax.php";
+    var woocs_lang_loading = "loading";
+    var woocs_shop_is_cached = 0;
+
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce-currency-switcher/js/front.js"
+    id="woocommerce-currency-switcher-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/pxltheme-core/assets/js/libs/isotope.pkgd.min.js"
+    id="isotope-js"></script>
+  <script type="text/javascript" id="donalfarm-post-grid-js-extra">
+    /* <![CDATA[ */
+    var grid_data = { "ajax_url": "\/assets\/wp-admin\/admin-ajax.php", "wpnonce": "f81f514cbb" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/themeselements/assets/js/pxl-post-grid.js"
+    id="donalfarm-post-grid-js"></script>
+  <script type="text/javascript" id="wc-cart-fragments-js-extra">
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = { "ajax_url": "\/donalfarm\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/donalfarm\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_4d11589372774e1cfdc77dec39421c56", "fragment_name": "wc_fragments_4d11589372774e1cfdc77dec39421c56", "request_timeout": "5000" };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js"
+    id="wc-cart-fragments-js" defer="defer" data-wp-strategy="defer"></script>
+  <script type="text/javascript" defer src="/assets/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js"
+    id="mc4wp-forms-api-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js"
+    id="elementor-webpack-runtime-js"></script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/elementor/assets/js/frontend-modules.min.js"
+    id="elementor-frontend-modules-js"></script>
+  <script type="text/javascript" id="elementor-frontend-js-before">
+    /* <![CDATA[ */
+    var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 576, "lg": 992, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 575, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 767, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet Portrait", "value": 991, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1199, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1599, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": true }, "version": "3.25.5", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "e_nested_atomic_repeaters": true, "e_optimized_control_loading": true, "e_onboarding": true, "e_css_smooth_scroll": true, "home_screen": true, "landing-pages": true, "nested-elements": true, "editor_v2": true, "link-in-bio": true, "floating-buttons": true }, "urls": { "assets": "\/assets\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "\/assets\/wp-admin\/admin-ajax.php", "uploadUrl": "\/assets\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "71d245a1c7" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop"], "viewport_mobile": 575, "viewport_mobile_extra": 767, "viewport_tablet": 991, "viewport_tablet_extra": 1199, "viewport_laptop": 1599, "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 4812, "title": "Donalfarm%20%E2%80%93%20Agriculture%20%26%20Organic%20Farming%20WP%20Theme", "excerpt": "", "featuredImage": false } };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/assets/wp-content/plugins/elementor/assets/js/frontend.min.js"
+    id="elementor-frontend-js"></script>
+</body>
+
+</html>

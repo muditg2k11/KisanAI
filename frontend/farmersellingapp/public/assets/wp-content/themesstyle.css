@@ -1,0 +1,21 @@
+/*
+Theme Name: Donalfarm
+Theme URI: /assets/
+Author: 7iquid
+Author URI: http://themeforest.net/user/7iquid
+Description: Donalfarm is the best of agriculture farm theme for organic farm website, such as organic food, organic agriculture, dairy farm, livestock, fruits, vegetables, agriculture business, organic shop or grocery.  It's layouts with a sleek and modern design, fully responsive and easy to customize with the Elementor builder with fully responsive, ensuring that your website will look great on all devices, including desktops, laptops, tablets, and smartphones. Donalfarm is also highly customizable, allowing you to easily modify the layout, colors, and fonts to match your brand and style.
+Version: 1.0.3
+License: ThemeForest
+License URI: https://themeforest.net/licenses
+Text Domain: donalfarm
+Tags: agriculture, farmers, farm tour, market, fresh food, quality, organic, organic food, health, technologies, clean, nature, environment, elementor, garden, products, farm shop, grocery store, woocommerce
+Use it to make something cool, have fun, and share what you've learned with others.
+Requires at least: 5.8 or Higher
+Requires PHP: 7.4 or Higher
+Tested up to: 8.3
+*/
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: inherit;
+    }
+}

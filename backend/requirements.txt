@@ -1,0 +1,12 @@
+flask
+flask-cors
+requests
+razorpay
+tensorflow
+numpy
+pandas
+scikit-learn
+google-generativeai
+mysql-connector-python
+python-dotenv
+Pillow
